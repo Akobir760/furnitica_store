@@ -105,7 +105,7 @@
   }
 
   .newsletter {
-    background: url(../{ static 'img/home/home1-background3.jpg' }) no-repeat;
+    background: url(../{ static '{% static 'img/home/home1-background3.jpg' %}' }) no-repeat;
     background-size: unset;
   }
 
