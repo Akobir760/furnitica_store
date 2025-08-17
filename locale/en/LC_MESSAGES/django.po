@@ -1,0 +1,425 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-17 20:23+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\settings.py:115 .\templates\layout\header-home.html:232
+msgid "English"
+msgstr ""
+
+#: .\core\settings.py:116
+msgid "Ozbekcha"
+msgstr ""
+
+#: .\templates\home.html:18
+msgid "SIDE TABLE"
+msgstr ""
+
+#: .\templates\home.html:23 .\templates\home.html:32
+msgid "Aliquam lobortis"
+msgstr ""
+
+#: .\templates\home.html:26 .\templates\home.html:35
+msgid "Duis Reprehenderit"
+msgstr ""
+
+#: .\templates\home.html:38
+msgid "Voluptate"
+msgstr ""
+
+#: .\templates\home.html:65
+msgid "FIREPLACE"
+msgstr ""
+
+#: .\templates\home.html:73
+msgid "DINNING ROOM"
+msgstr ""
+
+#: .\templates\home.html:86
+msgid "Sharp"
+msgstr ""
+
+#: .\templates\home.html:89
+msgid "Electrolux"
+msgstr ""
+
+#: .\templates\home.html:110 .\templates\layout\footer-home.html:255
+msgid "BATHROOM"
+msgstr ""
+
+#: .\templates\home.html:162 .\templates\layout\footer-home.html:129
+msgid "LIVING ROOM"
+msgstr ""
+
+#: .\templates\home.html:217 .\templates\layout\footer-home.html:209
+msgid "BEDROOM"
+msgstr ""
+
+#: .\templates\home.html:248 .\templates\layout\footer-home.html:166
+msgid "KITCHEN"
+msgstr ""
+
+#: .\templates\home.html:279
+msgid "Blender"
+msgstr ""
+
+#: .\templates\home.html:315
+msgid "TABLE LAMP"
+msgstr ""
+
+#: .\templates\home.html:324
+msgid "Coventry dining"
+msgstr ""
+
+#: .\templates\home.html:327
+msgid "Accessories"
+msgstr ""
+
+#: .\templates\home.html:330
+msgid "Activewear"
+msgstr ""
+
+#: .\templates\home.html:333
+msgid "ASOS Basic Tops"
+msgstr ""
+
+#: .\templates\home.html:522
+msgid "Show More"
+msgstr ""
+
+#: .\templates\home.html:547
+msgid "Modern "
+msgstr ""
+
+#: .\templates\home.html:547
+msgid "Designer"
+msgstr ""
+
+#: .\templates\home.html:547
+msgid "Chair"
+msgstr ""
+
+#: .\templates\home.html:556 .\templates\home.html:567
+msgid "Creative"
+msgstr ""
+
+#: .\templates\home.html:557 .\templates\home.html:558
+#: .\templates\home.html:568
+msgid "Furniture"
+msgstr ""
+
+#: .\templates\home.html:569
+msgid "Design"
+msgstr ""
+
+#: .\templates\home.html:611 .\templates\pages\blog-list-sidebar-left.html:26
+#: .\templates\pages\blog-list-sidebar-left.html:52
+msgid "Living Room"
+msgstr ""
+
+#: .\templates\home.html:616 .\templates\home.html:1426
+msgid "New Arrivals"
+msgstr ""
+
+#: .\templates\home.html:619 .\templates\home.html:1429
+msgid "Best Seller"
+msgstr ""
+
+#: .\templates\home.html:622 .\templates\home.html:1432
+msgid "Featured Product"
+msgstr ""
+
+#: .\templates\home.html:924
+msgid "Nulla et justo non augue"
+msgstr ""
+
+#: .\templates\home.html:1143
+msgid "Deal Of The Day"
+msgstr ""
+
+#: .\templates\home.html:1144
+msgid "Hurry Up, The Same Time Is Not Extended !!!"
+msgstr ""
+
+#: .\templates\home.html:1421
+msgid "kitchen"
+msgstr ""
+
+#: .\templates\home.html:1422
+msgid "LOREM IPSUM DOLOR SIT AMET CONSECTETUR "
+msgstr ""
+
+#: .\templates\home.html:2042 .\templates\layout\footer-base.html:98
+msgid "Newsletter"
+msgstr ""
+
+#: .\templates\home.html:2043
+msgid ""
+"Sign up to our newsletter to get the latest articles, lookbooks voucher "
+"codedirect to your inbox"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:23
+#: .\templates\layout\footer-home.html:29
+#: .\templates\layout\header-home.html:106 .\templates\pages\about-us.html:35
+msgid "About Us"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:26
+#: .\templates\layout\footer-home.html:32
+msgid "Reasons to shop"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:29
+#: .\templates\layout\footer-home.html:35
+msgid "What our customers say"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:32
+#: .\templates\layout\footer-home.html:38
+msgid "Meet the team"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:35
+#: .\templates\layout\footer-home.html:41
+msgid "Contact our buyers"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:51
+#: .\templates\layout\footer-home.html:59
+#: .\templates\layout\header-home.html:109
+msgid "Contact Us"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:57
+msgid "Address "
+msgstr ""
+
+#: .\templates\layout\footer-base.html:76
+msgid "Hotline "
+msgstr ""
+
+#: .\templates\layout\footer-base.html:85
+msgid "Opening Hours "
+msgstr ""
+
+#: .\templates\layout\footer-base.html:88
+msgid "Monday - Sunday"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:89
+msgid "(Except Holidays)"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:99
+msgid ""
+"Sign up to our newsletter to get the latest articles, lookbooks voucher "
+"codes direct to your inbox"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:107
+msgid "subscribe"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:120
+msgid "Follow us on"
+msgstr ""
+
+#: .\templates\layout\footer-base.html:155
+msgid "Payment accept"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:25 .\templates\pages\about-us.html:44
+msgid "WHO WE ARE"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:44
+msgid "Cookies & privacy"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:55
+msgid "CUSTOMER SERVICES"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:62
+msgid "Help and advice"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:65
+msgid "Delivery"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:68
+msgid "Terms and conditions"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:71
+msgid "Refund Policy"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:74
+msgid "FAQs"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:85
+msgid "CONTACT US"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:91
+msgid "Showroom"
+msgstr ""
+
+#: .\templates\layout\footer-home.html:97
+msgid "Opening Hours"
+msgstr ""
+
+#: .\templates\layout\header-base.html:78
+#: .\templates\layout\header-base.html:259
+#: .\templates\layout\header-home.html:76
+msgid "View Cart"
+msgstr ""
+
+#: .\templates\layout\header-base.html:79
+#: .\templates\layout\header-base.html:174
+#: .\templates\layout\header-base.html:260
+#: .\templates\layout\header-home.html:77
+#: .\templates\layout\header-home.html:149
+#: .\templates\layout\header-home.html:354
+msgid "Checkout"
+msgstr ""
+
+#: .\templates\layout\header-base.html:110
+#: .\templates\layout\header-home.html:97 .\templates\pages\about-us.html:18
+#: .\templates\pages\blog-list-sidebar-left.html:21
+msgid "Home"
+msgstr ""
+
+#: .\templates\layout\header-base.html:113
+#: .\templates\layout\header-home.html:100
+msgid "Blog"
+msgstr ""
+
+#: .\templates\layout\header-base.html:116
+msgid "shop"
+msgstr ""
+
+#: .\templates\layout\header-base.html:119
+msgid "About"
+msgstr ""
+
+#: .\templates\layout\header-base.html:122
+msgid "Contact US"
+msgstr ""
+
+#: .\templates\layout\header-base.html:143
+msgid "Account"
+msgstr ""
+
+#: .\templates\layout\header-base.html:156
+#: .\templates\layout\header-home.html:132
+msgid "My Account"
+msgstr ""
+
+#: .\templates\layout\header-base.html:162
+msgid "Sign in"
+msgstr ""
+
+#: .\templates\layout\header-base.html:168
+msgid "Register Account"
+msgstr ""
+
+#: .\templates\layout\header-base.html:180
+#: .\templates\layout\header-home.html:156
+msgid "My Wishlists"
+msgstr ""
+
+#: .\templates\layout\header-base.html:252
+msgid "Total"
+msgstr ""
+
+#: .\templates\layout\header-home.html:103
+msgid "Shop"
+msgstr ""
+
+#: .\templates\layout\header-home.html:138
+msgid "Sign In"
+msgstr ""
+
+#: .\templates\layout\header-home.html:144
+msgid "Register account"
+msgstr ""
+
+#: .\templates\layout\header-home.html:238
+msgid "Uzbek"
+msgstr ""
+
+#: .\templates\layout\header-home.html:282
+msgid "FREE Delivery"
+msgstr ""
+
+#: .\templates\layout\header-home.html:283
+msgid "From"
+msgstr ""
+
+#: .\templates\layout\header-home.html:295
+msgid "MONEY BACK"
+msgstr ""
+
+#: .\templates\layout\header-home.html:296
+msgid "GUARANTEED"
+msgstr ""
+
+#: .\templates\layout\header-home.html:353
+msgid "View cart"
+msgstr ""
+
+#: .\templates\pages\about-us.html:23
+msgid "About us"
+msgstr ""
+
+#: .\templates\pages\about-us.html:82
+msgid "MEET OUR TEAM"
+msgstr ""
+
+#: .\templates\pages\blog-list-sidebar-left.html:31
+msgid "Sofa"
+msgstr ""
+
+#: .\templates\pages\blog-list-sidebar-left.html:45
+msgid "Categories"
+msgstr ""
+
+#: .\templates\pages\blog-list-sidebar-left.html:55
+msgid "Side Table"
+msgstr ""
+
+#: .\templates\pages\blog-list-sidebar-left.html:105
+msgid "Bathroom"
+msgstr ""
+
+#: .\templates\pages\blog-list-sidebar-left.html:129
+msgid "Dining Rooom"
+msgstr ""
+
+#: .\templates\pages\blog-list-sidebar-left.html:150
+msgid "BedRoom"
+msgstr ""
+
+#: .\templates\pages\blog-list-sidebar-left.html:169
+msgid "Kitchen"
+msgstr ""

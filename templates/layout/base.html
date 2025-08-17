@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/reponsive.css' %}">
 </head>
 
-<body id="contact" class="blog">
+<body {% block body_id %} {% endblock %}>
         {% if request.path == '/' %}
             {% include 'layout/header-home.html' %}
         {% else %}
@@ -736,7 +736,7 @@
     <script src="{% static 'libs/slider-range/js/jquery.slider.js' %}"></script>
 
     <!-- Template JS -->
-    <script src="js/theme.js"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
 </body>
 
 

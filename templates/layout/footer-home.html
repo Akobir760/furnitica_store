@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load i18n %}
     <footer class="footer-one">
         <div class="inner-footer">
             <div class="container">
@@ -9,7 +9,7 @@
                             <div class="block">
                                 <div class="block-content">
                                     <p class="logo-footer">
-                                        <img src="{ static '{% static 'img/home/logo.png' %}' }" alt="img">
+                                        <img src="{% static 'img/home/logo.png' %}" alt="img">
                                     </p>
                                     <p class="content-logo">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incidi
                                         dunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
@@ -22,26 +22,26 @@
                             <div class="block">
                                 <div class="block-content">
                                     <div class="title-block">
-                                        WHO WE ARE
+                                        {% trans 'WHO WE ARE' %}
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="#">About Us</a>
+                                            <a href="{% url 'pages:about' %}">{% trans 'About Us' %}</a>
                                         </li>
                                         <li>
-                                            <a href="#">Reasons to shop</a>
+                                            <a href="{% url 'pages:shop' %}">{% trans 'Reasons to shop' %}</a>
                                         </li>
                                         <li>
-                                            <a href="#">What our customers say</a>
+                                            <a href="#">{% trans 'What our customers say' %}</a>
                                         </li>
                                         <li>
-                                            <a href="#">Meet the teaml</a>
+                                            <a href="#">{% trans 'Meet the team' %}</a>
                                         </li>
                                         <li>
-                                            <a href="#">Contact our buyers</a>
+                                            <a href="#">{% trans 'Contact our buyers' %}</a>
                                         </li>
                                         <li>
-                                            <a href="#">Cookies & privacy</a>
+                                            <a href="#">{% trans 'Cookies & privacy' %}</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -52,26 +52,26 @@
                             <div class="block">
                                 <div class="block-content">
                                     <div class="title-block">
-                                        CUSTOMER SERVICES
+                                        {% trans 'CUSTOMER SERVICES' %}
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="#">Contact Us</a>
+                                            <a href="{% url 'pages:contact' %}">{% trans 'Contact Us' %}</a>
                                         </li>
                                         <li>
-                                            <a href="#">Help and advice</a>
+                                            <a href="#">{% trans 'Help and advice' %}</a>
                                         </li>
                                         <li>
-                                            <a href="#">Delivery</a>
+                                            <a href="#">{% trans 'Delivery' %}</a>
                                         </li>
                                         <li>
-                                            <a href="#">Terms and conditions</a>
+                                            <a href="#">{% trans 'Terms and conditions' %}</a>
                                         </li>
                                         <li>
-                                            <a href="#">Refund Policy</a>
+                                            <a href="#">{% trans 'Refund Policy' %}</a>
                                         </li>
                                         <li>
-                                            <a href="#">FAQs</a>
+                                            <a href="#">{% trans 'FAQs' %}</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -82,19 +82,19 @@
                             <div class="block">
                                 <div class="block-content">
                                     <div class="title-block">
-                                        CONTACT US
+                                        {% trans 'CONTACT US' %}
                                     </div>
                                     <div class="contact-content">
                                         <div class="data align-self-stretch d-flex">
                                             <i class="fa fa-home float-left m-bottom" aria-hidden="true"></i>
                                             <div class="content-data">
-                                                <b class="mr-2">Showroom:</b>123 Suspendis matti, Visaosang Building
+                                                <b class="mr-2">{% trans 'Showroom' %}:</b>123 Suspendis matti, Visaosang Building
 											</div>
                                         </div>
                                         <div class="data d-flex align-self-stretch">
                                             <i class="fa fa-clock-o float-left" aria-hidden="true"></i>
                                             <div class="content-data">
-                                                <b class="mr-2">Opening Hours: </b>08.00AM - 19.00
+                                                <b class="mr-2">{% trans 'Opening Hours' %}: </b>08.00AM - 19.00
                                             </div>
                                         </div>
                                         <div class="support d-dflex align-self-stretch">
@@ -126,7 +126,7 @@
                             <div class="block-content">
                                 <ul class="list-inline">
                                     <li class="name-list list-inline-item">
-                                        <span>LIVING ROOM</span> :</li>
+                                        <span>{% trans 'LIVING ROOM' %}</span> :</li>
                                     <li class="list-inline-item">
                                         <a href="product-grid-sidebar-left.html">SIDE TABLE</a>
                                     </li>
@@ -163,7 +163,7 @@
                             <div class="block-content">
                                 <ul class="list-inline">
                                     <li class="name-list list-inline-item">
-                                        <span>KITCHEN</span> :</li>
+                                        <span>{% trans 'KITCHEN' %}</span> :</li>
                                     <li class="list-inline-item">
                                         <a href="product-grid-sidebar-left.html">WINDOW CURTAIN</a>
                                     </li>
@@ -206,7 +206,7 @@
                             <div class="block-content">
                                 <ul class="list-inline">
                                     <li class="name-list list-inline-item">
-                                        <span>BEDROOM</span> :</li>
+                                        <span>{% trans 'BEDROOM' %}</span> :</li>
                                     <li class="list-inline-item">
                                         <a href="product-grid-sidebar-left.html">SIDE TABLE</a>
                                     </li>
@@ -252,7 +252,7 @@
                             <div class="block-content">
                                 <ul class="list-inline">
                                     <li class="name-list list-inline-item">
-                                        <span>BATHROOM</span> :</li>
+                                        <span>{% trans 'BATHROOM' %}</span> :</li>
                                     <li class="list-inline-item">
                                         <a href="product-grid-sidebar-left.html">SIDE TABLE</a>
                                     </li>
@@ -290,13 +290,8 @@
         <div id="tiva-copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-xs-12 align-items-center justify-content-md-start justify-content-sm-center justify-content-xs-center">
-                        <span>
-                            <a target="_blank" href="https://www.templateshub.net">Templates Hub</a>
-                        </span>
-                    </div>
                     <div class="col-md-6 col-xs-12 align-items-center justify-content-md-end d-flex justify-content-xs-center">
-                        <img src="{ static '{% static 'img/home/payment.png' %}' }" alt="img">
+                        <img src="{% static 'img/home/payment.png' %}" alt="img">
                     </div>
                 </div>
             </div>
