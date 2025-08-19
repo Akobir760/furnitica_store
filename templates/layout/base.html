@@ -41,7 +41,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/reponsive.css' %}">
 </head>
 
-<body {% block body_id %} {% endblock %}>
+<body id = {% block body_id %} {% endblock %}>
+    {% comment %} {% url 'layout/header-home.html'  as header_home %}
+    {% url 'layout/header-base.html' as header_base %} {% endcomment %}
         {% if request.path == '/' %}
             {% include 'layout/header-home.html' %}
         {% else %}
