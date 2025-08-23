@@ -36,6 +36,10 @@
     <link rel="stylesheet" href="{% static 'libs/slider-range/css/jslider.css' %}">
     <link rel="stylesheet" href="{% static 'libs/owl-carousel/assets/owl.carousel.min.css' %}">
 
+    <link rel="stylesheet" href="{% static 'libs/slick-slider/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/slick-slider/css/slick-theme.css' %}">
+
+
     <!-- Template CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/reponsive.css' %}">
@@ -50,10 +54,11 @@
             {% include 'layout/header-base.html' %}
         {% endif %}
 
+
         
         {% block content %}{% endblock %}
 
-        {% if request.path == '/' %}
+        {% if request.path == '' %}
             {% include 'layout/footer-home.html' %}
         {% else %}
             {% include 'layout/footer-base.html' %}
@@ -736,6 +741,9 @@
     <script src="{% static 'libs/slider-range/js/jquery.dependClass-0.1.js' %}"></script>
     <script src="{% static 'libs/slider-range/js/draggable-0.1.js' %}"></script>
     <script src="{% static 'libs/slider-range/js/jquery.slider.js' %}"></script>
+
+    <script src="{% static 'libs/slick-slider/js/slick.min.js' %}"></script>
+
 
     <!-- Template JS -->
     <script src="{% static 'js/theme.js' %}"></script>
