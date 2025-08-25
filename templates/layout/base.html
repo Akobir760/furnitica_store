@@ -46,9 +46,8 @@
 </head>
 
 <body id = {% block body_id %} {% endblock %}>
-    {% comment %} {% url 'layout/header-home.html'  as header_home %}
-    {% url 'layout/header-base.html' as header_base %} {% endcomment %}
-        {% if request.path == '/' %}
+    {% url 'layout/header-home.html'  as header_home %}
+        {% if request.path == header_home %}
             {% include 'layout/header-home.html' %}
         {% else %}
             {% include 'layout/header-base.html' %}
@@ -57,12 +56,13 @@
 
         
         {% block content %}{% endblock %}
-
-        {% if request.path == '' %}
+        {% url 'layout/footer-home.html' as footer_home %}
+        {% if request.path == footer_home %}
             {% include 'layout/footer-home.html' %}
         {% else %}
             {% include 'layout/footer-base.html' %}
         {% endif %}
+        
     <!-- back top top -->
     <div class="back-to-top">
         <a href="#">
