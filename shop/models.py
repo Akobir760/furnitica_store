@@ -53,3 +53,4 @@ class ProductModel(BaseModel):
         verbose_name = _("product")
         verbose_name_plural = _("products")
 
+

@@ -21,12 +21,7 @@
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <span>{% trans 'Living Room' %}</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span>{% trans 'Sofa' %}</span>
+                                                <span>{% trans 'Shop' %}</span>
                                             </a>
                                         </li>
                                     </ol>
@@ -45,16 +40,36 @@
                                             <div class="block-content">
                                                 {% for category in categories %}
                                                     <div class="cateTitle hasSubCategory open level1">
-                                                        <span class="arrow collapsed collapse-icons" data-toggle="collapse" data-target="#livingroom" aria-expanded="false" role="status">
+                                                        <span class="arrow collapsed collapse-icons"
+                                                            data-toggle="collapse"
+                                                            data-target="#category-{{ category.id }}"
+                                                            aria-expanded="false"
+                                                            role="status">
                                                             <i class="zmdi zmdi-minus"></i>
                                                             <i class="zmdi zmdi-plus"></i>
                                                         </span>
-                                                        <a class="cateItem" href="#">{{ category.name }}</a>
-                                                        
+                                                        <a class="cateItem" href="{% url 'shop:product_by_category' category.id %}">{{ category.name }}</a>
+                                                    </div>
+
+                                                    <!-- Collapsible subcategories -->
+                                                    <div class="subCategory collapse"
+                                                        id="category-{{ category.id }}"
+                                                        aria-expanded="false"
+                                                        role="status">
+                                                        {% for sub in category.subcategories.all %}
+                                                            <div class="cateTitle">
+                                                                <a href="#" class="cateItem">{{ sub.name }}</a>
+                                                            </div>
+                                                        {% empty %}
+                                                            <div class="cateTitle">
+                                                                <a href="#" class="cateItem">{% trans "No subcategories" %}</a>
+                                                            </div>
+                                                        {% endfor %}
                                                     </div>
                                                 {% endfor %}
                                             </div>
                                         </div>
+
 
                                         <!-- best seller -->
                                         <div class="sidebar-block">
@@ -68,7 +83,7 @@
                                                                 <input type="checkbox">
                                                                 <span class="checkmark"></span>
                                                             </label>
-                                                            <a href="#">
+                                                            <a href="{% url 'shop:product_by_catalog' catalog.id %}">
                                                                 <b>{{catalog.title}}</b>
                                                             </a>
                                                         {% endfor %}

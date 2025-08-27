@@ -41,40 +41,15 @@
                                             <div class="block-content">
                                                 {% for category in categories %}
                                                 <div class="cateTitle hasSubCategory open level1">
-                                                    <span class="arrow collapse-icons collapsed" data-toggle="collapse" data-target="#livingroom" aria-expanded="false" role="status">
+                                                    <span class="arrow collapse-icons collapsed" data-toggle="collapse"  data-target="#category-{{ category.id }}" aria-expanded="false" role="status">
                                                         <i class="zmdi zmdi-minus"></i>
                                                         <i class="zmdi zmdi-plus"></i>
                                                     </span>
-                                                    <a class="cateItem" href="#">{{category.name}}</a>
-                                                    <div class="subCategory collapse" id="livingroom" aria-expanded="true" role="status">
+                                                    <a class="cateItem" href="#">{{ category.name }}</a>
+
+                                                    <div class="subCategory collapse" id="category-{{ category.id }}" aria-expanded="true"  role="status">
                                                         <div class="cateTitle">
                                                             <a href="#" class="cateItem">{% trans 'Side Table' %}</a>
-                                                            <div class="subCategory collapse" id="subCategory-fruits" aria-expanded="true" role="status">
-                                                                <div class="cateTitle">
-                                                                    <a href="#" class="cateItem">Side Table</a>
-                                                                </div>
-                                                                <div class="cateTitle">
-                                                                    <a href="#" class="cateItem">FIREPLACE</a>
-                                                                </div>
-                                                                <div class="cateTitle">
-                                                                    <a href="#" class="cateItem">FIREPLACE</a>
-                                                                </div>
-                                                                <div class="cateTitle">
-                                                                    <a href="#" class="cateItem">floor lamp</a>
-                                                                </div>
-                                                                <div class="cateTitle">
-                                                                    <a href="#" class="cateItem">ottoman</a>
-                                                                </div>
-                                                                <div class="cateTitle">
-                                                                    <a href="#" class="cateItem">armchair</a>
-                                                                </div>
-                                                                <div class="cateTitle">
-                                                                    <a href="#" class="cateItem">cushion</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cateTitle">
-                                                            <a href="#" class="cateItem"></a>
                                                         </div>
                                                         <div class="cateTitle">
                                                             <a href="#" class="cateItem">FIREPLACE</a>
@@ -95,6 +70,7 @@
                                                 </div>
                                                 {% endfor %}
                                             </div>
+
                                         </div>
 
                                         <!-- recent posts -->
