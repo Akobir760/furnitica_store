@@ -37,8 +37,8 @@ class CatalogModel(BaseModel):
 
 class ProductModel(BaseModel):
     name = models.CharField(max_length=120, verbose_name=_('name'))
-    category = models.ForeignKey(CategoryModel, on_delete=models.CASCADE, verbose_name=_('catalog'))
-    catalog = models.ForeignKey(CatalogModel, on_delete=models.CASCADE, verbose_name=_('category'))
+    category = models.ForeignKey(CategoryModel, on_delete=models.CASCADE, verbose_name=_('category'))
+    catalog = models.ForeignKey(CatalogModel, on_delete=models.CASCADE, verbose_name=_('catalog'))
     price = models.SmallIntegerField(verbose_name=_('price'))
     image = models.ImageField(upload_to='images/', blank=True, null=True, verbose_name=_('image'))
     short_description = models.TextField(verbose_name=_('short_description'))

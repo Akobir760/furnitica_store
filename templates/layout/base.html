@@ -13,7 +13,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Furnitica - Minimalist Furniture HTML Template</title>
+    <title>{% block title %} {% endblock %}</title>
 
     <meta name="keywords" content="Furniture, Decor, Interior">
     <meta name="description" content="Furnitica - Minimalist Furniture HTML Template">
@@ -45,9 +45,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/reponsive.css' %}">
 </head>
 
-<body id = {% block body_id %} {% endblock %}>
-    {% url 'layout/header-home.html'  as header_home %}
-        {% if request.path == header_home %}
+<body {% block body_id %} {% endblock %}>
+    {% url 'pages:home'  as home_url %}
+        {% if request.path == home_url %}
             {% include 'layout/header-home.html' %}
         {% else %}
             {% include 'layout/header-base.html' %}
@@ -56,8 +56,7 @@
 
         
         {% block content %}{% endblock %}
-        {% url 'layout/footer-home.html' as footer_home %}
-        {% if request.path == footer_home %}
+        {% if request.path == home_url %}
             {% include 'layout/footer-home.html' %}
         {% else %}
             {% include 'layout/footer-base.html' %}

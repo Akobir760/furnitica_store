@@ -1,6 +1,8 @@
-{% extands 'layout/base.html' %}
+{% extends 'layout/base.html' %}
+{% load i18n %}
 {% load static %}
-{% block body_id %}"product-cart" {% endblock %}
+{% block title %} "Cart" {% endblock %}
+{% block body_id %}class="product-cart checkout-cart blog"{% endblock %}
 {% block content %}
     <div class="main-content" id="cart">
         <!-- main -->

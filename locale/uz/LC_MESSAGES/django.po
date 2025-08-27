@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-17 20:23+0500\n"
+"POT-Creation-Date: 2025-08-26 17:22+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,141 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\core\settings.py:115 .\templates\layout\header-home.html:232
+#: .\blogs\models.py:14
+#, fuzzy
+#| msgid "Categories"
+msgid "category_name"
+msgstr "Kategoriyalar"
+
+#: .\blogs\models.py:20 .\shop\models.py:21
+#, fuzzy
+#| msgid "Categories"
+msgid "Category"
+msgstr "Kategoriyalar"
+
+#: .\blogs\models.py:21 .\shop\models.py:22
+#: .\templates\pages\blog-list-sidebar-left.html:44
+#: .\templates\pages\product-grid-sidebar-left.html:44
+#: .\templates\pages\product-grid-sidebar-left.html:172
+msgid "Categories"
+msgstr "Kategoriyalar"
+
+#: .\blogs\models.py:25
+msgid "tag_name"
+msgstr ""
+
+#: .\blogs\models.py:31
+msgid "Tag"
+msgstr ""
+
+#: .\blogs\models.py:32
+msgid "Tags"
+msgstr ""
+
+#: .\blogs\models.py:36
+msgid "blog"
+msgstr ""
+
+#: .\blogs\models.py:37
+msgid "email"
+msgstr ""
+
+#: .\blogs\models.py:38
+msgid "text"
+msgstr "matn"
+
+#: .\blogs\models.py:44
+msgid "Comment"
+msgstr "firk"
+
+#: .\blogs\models.py:45
+msgid "Comments"
+msgstr "fikrlar"
+
+#: .\blogs\models.py:49
+msgid "blogs"
+msgstr ""
+
+#: .\blogs\models.py:50 .\shop\models.py:43
+msgid "image"
+msgstr "rasm"
+
+#: .\blogs\models.py:51
+msgid "shorgt_description"
+msgstr "qisqa_malumot"
+
+#: .\blogs\models.py:52 .\shop\models.py:45
+msgid "long_description"
+msgstr "to'liq_malumot"
+
+#: .\blogs\models.py:53
+msgid "tags"
+msgstr ""
+
+#: .\blogs\models.py:59 .\templates\layout\header-base.html:113
+#: .\templates\layout\header-home.html:100
+msgid "Blog"
+msgstr ""
+
+#: .\blogs\models.py:60
+msgid "Blogs"
+msgstr ""
+
+#: .\core\settings.py:118 .\templates\layout\header-home.html:232
 msgid "English"
 msgstr "Ingliz tili"
 
-#: .\core\settings.py:116
+#: .\core\settings.py:119
 msgid "Ozbekcha"
 msgstr "O'zbek tili"
+
+#: .\shop\models.py:6
+msgid "created_at"
+msgstr "yaratilgan vaqti"
+
+#: .\shop\models.py:7
+msgid "updated_at"
+msgstr "yangilangan vaqti"
+
+#: .\shop\models.py:14 .\shop\models.py:39
+msgid "name"
+msgstr "nomi"
+
+#: .\shop\models.py:27
+msgid "title"
+msgstr "nomi"
+
+#: .\shop\models.py:34
+msgid "Catalog"
+msgstr "Katalog"
+
+#: .\shop\models.py:35
+msgid "Catalogs"
+msgstr "Kataloglar"
+
+#: .\shop\models.py:40
+msgid "category"
+msgstr "Kategoriyalar"
+
+#: .\shop\models.py:41
+msgid "catalog"
+msgstr "Katalog"
+
+#: .\shop\models.py:42
+msgid "price"
+msgstr "narx"
+
+#: .\shop\models.py:44
+msgid "short_description"
+msgstr "qisqa_malumot"
+
+#: .\shop\models.py:53
+msgid "product"
+msgstr "mahsulot"
+
+#: .\shop\models.py:54
+msgid "products"
+msgstr "mahsulotlar"
 
 #: .\templates\home.html:18
 msgid "SIDE TABLE"
@@ -88,7 +216,7 @@ msgstr ""
 
 #: .\templates\home.html:327
 msgid "Accessories"
-msgstr ""
+msgstr "Aksessuarlar"
 
 #: .\templates\home.html:330
 msgid "Activewear"
@@ -127,8 +255,9 @@ msgstr "Mebel"
 msgid "Design"
 msgstr "Dizayn"
 
-#: .\templates\home.html:611 .\templates\pages\blog-list-sidebar-left.html:26
-#: .\templates\pages\blog-list-sidebar-left.html:52
+#: .\templates\home.html:611 .\templates\pages\blog-list-sidebar-left.html:25
+#: .\templates\pages\blog-list-sidebar-left.html:51
+#: .\templates\pages\product-grid-sidebar-left.html:23
 msgid "Living Room"
 msgstr "Mehmonxona"
 
@@ -178,7 +307,7 @@ msgstr ""
 
 #: .\templates\layout\footer-base.html:23
 #: .\templates\layout\footer-home.html:29
-#: .\templates\layout\header-home.html:106 .\templates\pages\about-us.html:35
+#: .\templates\layout\header-home.html:106 .\templates\pages\about-us.html:34
 msgid "About Us"
 msgstr "Biz Haqimizda"
 
@@ -248,7 +377,7 @@ msgstr "Bizni kuzating"
 msgid "Payment accept"
 msgstr "To'lov usullari"
 
-#: .\templates\layout\footer-home.html:25 .\templates\pages\about-us.html:44
+#: .\templates\layout\footer-home.html:25 .\templates\pages\about-us.html:43
 msgid "WHO WE ARE"
 msgstr "BIZ HAQIMIZDA"
 
@@ -305,18 +434,14 @@ msgstr "Savatni ko'rish"
 #: .\templates\layout\header-home.html:149
 #: .\templates\layout\header-home.html:354
 msgid "Checkout"
-msgstr "Ro'yxatdan o'chirilish"
+msgstr "o'chirish"
 
 #: .\templates\layout\header-base.html:110
-#: .\templates\layout\header-home.html:97 .\templates\pages\about-us.html:18
-#: .\templates\pages\blog-list-sidebar-left.html:21
+#: .\templates\layout\header-home.html:97 .\templates\pages\about-us.html:17
+#: .\templates\pages\blog-list-sidebar-left.html:20
+#: .\templates\pages\product-grid-sidebar-left.html:18
 msgid "Home"
 msgstr "Asosiy"
-
-#: .\templates\layout\header-base.html:113
-#: .\templates\layout\header-home.html:100
-msgid "Blog"
-msgstr ""
 
 #: .\templates\layout\header-base.html:116
 msgid "shop"
@@ -392,38 +517,55 @@ msgstr "KAFOLATLANGAN"
 msgid "View cart"
 msgstr "Savatni ko'rish"
 
-#: .\templates\pages\about-us.html:23
+#: .\templates\pages\about-us.html:22
 msgid "About us"
 msgstr "Biz Haqimizda"
 
-#: .\templates\pages\about-us.html:82
+#: .\templates\pages\about-us.html:81
 msgid "MEET OUR TEAM"
 msgstr "JAMOAMIZ BILAN TANISHING"
 
-#: .\templates\pages\blog-list-sidebar-left.html:31
+#: .\templates\pages\blog-list-sidebar-left.html:30
+#: .\templates\pages\product-grid-sidebar-left.html:28
 msgid "Sofa"
 msgstr "Divan"
 
-#: .\templates\pages\blog-list-sidebar-left.html:45
-msgid "Categories"
-msgstr "Kategoriyalar"
-
-#: .\templates\pages\blog-list-sidebar-left.html:55
+#: .\templates\pages\blog-list-sidebar-left.html:54
 msgid "Side Table"
 msgstr "Yon panel"
 
-#: .\templates\pages\blog-list-sidebar-left.html:105
+#: .\templates\pages\blog-list-sidebar-left.html:104
 msgid "Bathroom"
 msgstr "Ko'rgazma"
 
-#: .\templates\pages\blog-list-sidebar-left.html:129
+#: .\templates\pages\blog-list-sidebar-left.html:128
 msgid "Dining Rooom"
 msgstr "Mehmonxona"
 
-#: .\templates\pages\blog-list-sidebar-left.html:150
+#: .\templates\pages\blog-list-sidebar-left.html:149
 msgid "BedRoom"
 msgstr "Yotoqxona"
 
-#: .\templates\pages\blog-list-sidebar-left.html:169
+#: .\templates\pages\blog-list-sidebar-left.html:168
 msgid "Kitchen"
 msgstr "Oshxona"
+
+#: .\templates\pages\product-grid-sidebar-left.html:271
+msgid "By Price"
+msgstr "Naxr bo'yicha"
+
+#: .\templates\pages\product-grid-sidebar-left.html:286
+msgid "By Color"
+msgstr "Ranglar"
+
+#: .\templates\pages\product-grid-sidebar-left.html:1086
+msgid "In Stock"
+msgstr "Sotuvda bor"
+
+#: .\templates\pages\product-grid-sidebar-left.html:1783
+msgid "Previous"
+msgstr "Oldingi"
+
+#: .\templates\pages\product-grid-sidebar-left.html:1804
+msgid "Next"
+msgstr "Keyingi"

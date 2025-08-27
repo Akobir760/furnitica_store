@@ -10,7 +10,7 @@ class BaseModel(models.Model):
         abstract = True
 
 
-class CategoryModel(BaseModel):
+class BlogCategoryModel(BaseModel):
     name = models.CharField(max_length=100, unique=True, verbose_name=_('category_name'))
 
     def __str__(self):
@@ -46,7 +46,7 @@ class ComentModel(BaseModel):
 
 class BlogModel(BaseModel):
     title = models.CharField(max_length=200)
-    category = models.ForeignKey(CategoryModel, on_delete=models.CASCADE, related_name=_('blogs'))
+    category = models.ForeignKey(BlogCategoryModel, on_delete=models.CASCADE, related_name=_('blogs'))
     image = models.ImageField(upload_to='images/', blank=True, null=True, verbose_name=_('image'))
     short_description = models.TextField(verbose_name=_('shorgt_description'))
     long_description = models.TextField(verbose_name=_('long_description'))
