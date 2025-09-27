@@ -45,7 +45,7 @@
                                                         <i class="zmdi zmdi-minus"></i>
                                                         <i class="zmdi zmdi-plus"></i>
                                                     </span>
-                                                    <a class="cateItem" href="#">{{ category.name }}</a>
+                                                    <a class="cateItem" href="{% url 'blogs:blog_by_category' category.id %}">{{ category.name }}</a>
 
                                                     <div class="subCategory collapse" id="category-{{ category.id }}" aria-expanded="true"  role="status">
                                                         <div class="cateTitle">
@@ -127,7 +127,7 @@
                                                 <ul class="listSidebarBlog list-unstyled">
                                                     {% for tag in tags %}
                                                     <li>
-                                                        <a href="#" title="Show products matching tag Hot Trend">{{tag.name}}</a>
+                                                        <a href="{% url 'blogs:blog_by_tag' tag.id %}" >{{tag.name}}</a>
                                                     </li>
                                                     {% endfor %}
 
